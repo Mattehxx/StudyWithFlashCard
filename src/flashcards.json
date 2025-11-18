@@ -1,0 +1,729 @@
+{
+  "MANAGEMENT & LEADERSHIP": [
+    {
+      "id": 1,
+      "question": "Guidare, condurre un team, un progetto o un processo",
+      "answer": "Lead",
+      "tip": "She leads a multinational team across three time zones."
+    },
+    {
+      "id": 2,
+      "question": "Assegnare responsabilità in modo efficace",
+      "answer": "Delegate",
+      "tip": "Common Error: He delegates tasks to team members based on their strengths."
+    },
+    {
+      "id": 3,
+      "question": "Dare autonomia e potere decisionale",
+      "answer": "Empower",
+      "tip": "Our goal is to empower employees to make decisions."
+    },
+    {
+      "id": 4,
+      "question": "Responsabilità diretta dei risultati",
+      "answer": "Accountability",
+      "tip": "Managers must hold their teams accountable for outcomes."
+    },
+    {
+      "id": 5,
+      "question": "Processo di prendere decisioni",
+      "answer": "Decision-making"
+    },
+    {
+      "id": 6,
+      "question": "Tutte le parti coinvolte (clienti, fornitori, governo, dipendenti)",
+      "answer": "Stakeholders",
+      "tip": "We must deliver results to stakeholders."
+    },
+    {
+      "id": 7,
+      "question": "Indicatori di performance",
+      "answer": "KPIs (Key Performance Indicators)",
+      "tip": "Retention rate, ROI, Productivity index, Customer satisfaction score"
+    }
+  ],
+  "HR, RECRUITMENT & TRAINING": [
+    {
+      "id": 1,
+      "question": "Introduzione di un nuovo dipendente",
+      "answer": "Onboarding"
+    },
+    {
+      "id": 2,
+      "question": "Formazione iniziale",
+      "answer": "Induction",
+      "tip": "The induction programme covers company values and policies."
+    },
+    {
+      "id": 3,
+      "question": "Percorso di sviluppo guidato - Guida esperta - Chi riceve mentoring",
+      "answer": "Mentoring - Mentor - Mentee"
+    },
+    {
+      "id": 4,
+      "question": "Perdita graduale di personale",
+      "answer": "Attrition",
+      "tip": "High attrition indicates poor employee satisfaction."
+    },
+    {
+      "id": 5,
+      "question": "Ricambio del personale",
+      "answer": "Turnover",
+      "tip": "Errore comune: “turnover” = fatturato, NO nel business inglese → turnover = ricambio"
+    },
+    {
+      "id": 6,
+      "question": "Valutazione delle performance",
+      "answer": "Performance review"
+    },
+    {
+      "id": 7,
+      "question": "Acquisire nuove competenze - Cambiare completamente settore/skill",
+      "answer": "Upskilling - Reskilling"
+    },
+    {
+      "id": 8,
+      "question": "Equilibrio tra vita privata e lavoro",
+      "answer": "Work-life balance"
+    }
+  ],
+  "PRODUCTIVITY & PERFORMANCE": [
+    {
+      "id": 1,
+      "question": "Risultati concreti di un progetto",
+      "answer": "Deliverables",
+      "tip": "The final deliverables are due on Monday."
+    },
+    {
+      "id": 2,
+      "question": "Obiettivo intermedio importante",
+      "answer": "Milestone"
+    },
+    {
+      "id": 3,
+      "question": "Perimetro del progetto",
+      "answer": "Scope",
+      "tip": "Let’s clarify the project scope before we start."
+    },
+    {
+      "id": 4,
+      "question": "Carico di lavoro",
+      "answer": "Workload",
+      "tip": "The team is struggling with a heavy workload."
+    },
+    {
+      "id": 5,
+      "question": "Fare le cose nel minor tempo e sforzo - Fare le cose giuste",
+      "answer": "Efficiency - Effectiveness"
+    },
+    {
+      "id": 6,
+      "question": "Rendere più efficiente eliminando sprechi",
+      "answer": "Streamline"
+    },
+    {
+      "id": 7,
+      "question": "Collo di bottiglia che rallenta tutto",
+      "answer": "Bottleneck"
+    },
+    {
+      "id": 8,
+      "question": "Tempo necessario per completare qualcosa",
+      "answer": "Turnaround time"
+    }
+  ],
+  "FINANCE & CORPORATE OPERATIONS": [
+    {
+      "id": 1,
+      "question": "Ricavi",
+      "answer": "Revenue"
+    },
+    {
+      "id": 2,
+      "question": "Margine di profitto",
+      "answer": "Profit margin"
+    },
+    {
+      "id": 3,
+      "question": "Conveniente",
+      "answer": "Cost-effective"
+    },
+    {
+      "id": 4,
+      "question": "Distribuzione del budget",
+      "answer": "Budget allocation"
+    },
+    {
+      "id": 5,
+      "question": "Previsione economica",
+      "answer": "Forecasting"
+    }
+  ],
+  "ORGANIZATIONAL CULTURE & STRUCTURE": [
+    {
+      "id": 1,
+      "question": "Gerarchia piatta, molti team autonomi - Molte linee gerarchiche",
+      "answer": "Flat - Tall"
+    },
+    {
+      "id": 2,
+      "question": "Struttura gerarchica",
+      "answer": "Hierarchy"
+    },
+    {
+      "id": 3,
+      "question": "Responsabilizzazione",
+      "answer": "Empowerment"
+    },
+    {
+      "id": 4,
+      "question": "Valori, comportamenti, abitudini",
+      "answer": "Corporate culture"
+    },
+    {
+      "id": 5,
+      "question": "Codice di comportamento aziendale",
+      "answer": "Code of conduct"
+    },
+    {
+      "id": 6,
+      "question": "Valori chiave dell’azienda",
+      "answer": "Core values"
+    },
+    {
+      "id": 7,
+      "question": "Cosa fai oggi - Dove vuoi arrivare - Perché esisti",
+      "answer": "Mission - Vision - Purpose"
+    }
+  ],
+  "COMMUNICATION SKILLS & MEETINGS": [
+    {
+      "id": 1,
+      "question": "Chiarire",
+      "answer": "Clarify",
+      "tip": "Let me clarify that point."
+    },
+    {
+      "id": 2,
+      "question": "Riassumere",
+      "answer": "Summarise"
+    },
+    {
+      "id": 3,
+      "question": "Ordine del giorno",
+      "answer": "Agenda"
+    },
+    {
+      "id": 4,
+      "question": "Ricontatto successivo",
+      "answer": "Follow-up"
+    },
+    {
+      "id": 5,
+      "question": "Verbale della riunione",
+      "answer": "Minutes"
+    },
+    {
+      "id": 6,
+      "question": "Compiti assegnati dopo un meeting",
+      "answer": "Action items / Action points"
+    },
+    {
+      "id": 7,
+      "question": "Cambiare giorno/ora - Rimandare (senza nuova data)",
+      "answer": "Reschedule - Postpone"
+    },
+    {
+      "id": 8,
+      "question": "Gestione del conflitto",
+      "answer": "Conflict resolution"
+    }
+  ],
+  "WORKPLACE BEHAVIOR & SOFT SKILLS": [
+    {
+      "id": 1,
+      "question": "Agire senza aspettare istruzioni",
+      "answer": "Proactive"
+    },
+    {
+      "id": 2,
+      "question": "Affidabile",
+      "answer": "Reliable"
+    },
+    {
+      "id": 3,
+      "question": "Sa trovare soluzioni alternative",
+      "answer": "Resourceful"
+    },
+    {
+      "id": 4,
+      "question": "Comunicazione chiara ma non aggressiva",
+      "answer": "Assertive"
+    },
+    {
+      "id": 5,
+      "question": "Capacità di capire emozioni altrui",
+      "answer": "Empathy"
+    }
+  ],
+  "BUSINESS VERBS": [
+    {
+      "id": 1,
+      "question": "Ricontattare",
+      "answer": "Follow up"
+    },
+    {
+      "id": 2,
+      "question": "Indagare",
+      "answer": "Look into"
+    },
+    {
+      "id": 3,
+      "question": "Eseguire",
+      "answer": "Carry out"
+    },
+    {
+      "id": 4,
+      "question": "Capire, trovare soluzione",
+      "answer": "Figure out"
+    },
+    {
+      "id": 5,
+      "question": "Sollevare un punto",
+      "answer": "Bring up"
+    },
+    {
+      "id": 6,
+      "question": "Rifiutare",
+      "answer": "Turn down"
+    },
+    {
+      "id": 7,
+      "question": "Organizzare",
+      "answer": "Set up"
+    },
+    {
+      "id": 8,
+      "question": "Risolvere",
+      "answer": "Sort out"
+    },
+    {
+      "id": 9,
+      "question": "Supportare",
+      "answer": "Back up"
+    },
+    {
+      "id": 10,
+      "question": "Assumere o accettare un compito",
+      "answer": "Take on"
+    },
+    {
+      "id": 11,
+      "question": "Anticipare data",
+      "answer": "Bring forward"
+    },
+    {
+      "id": 12,
+      "question": "Rimandare",
+      "answer": "Put off"
+    },
+    {
+      "id": 13,
+      "question": "Intensificare",
+      "answer": "Step up"
+    },
+    {
+      "id": 14,
+      "question": "Ridurre",
+      "answer": "Cut back"
+    },
+    {
+      "id": 15,
+      "question": "Ritirarsi",
+      "answer": "Pull out"
+    },
+    {
+      "id": 16,
+      "question": "Rivedere",
+      "answer": "Go over"
+    },
+    {
+      "id": 17,
+      "question": "Far notare",
+      "answer": "Point out"
+    },
+    {
+      "id": 18,
+      "question": "Proporre un’idea",
+      "answer": "Come up with"
+    },
+    {
+      "id": 19,
+      "question": "Crollare / smettere di funzionare",
+      "answer": "Break down"
+    },
+    {
+      "id": 20,
+      "question": "Entrare in un mercato",
+      "answer": "Break into"
+    },
+    {
+      "id": 21,
+      "question": "Acquisire",
+      "answer": "Take over"
+    },
+    {
+      "id": 22,
+      "question": "Aprirsi (in conversazioni)",
+      "answer": "Open up"
+    },
+    {
+      "id": 23,
+      "question": "Rallentare",
+      "answer": "Slow down"
+    },
+    {
+      "id": 24,
+      "question": "Procedere",
+      "answer": "Move forward"
+    },
+    {
+      "id": 25,
+      "question": "Mantenere il ritmo",
+      "answer": "Keep up"
+    },
+    {
+      "id": 26,
+      "question": "Tenere traccia",
+      "answer": "Keep track"
+    },
+    {
+      "id": 27,
+      "question": "Rimanere indietro",
+      "answer": "Fall behind"
+    },
+    {
+      "id": 28,
+      "question": "Licenziare",
+      "answer": "Lay off"
+    },
+    {
+      "id": 29,
+      "question": "Lanciare (prodotti/strategie)",
+      "answer": "Roll out"
+    },
+    {
+      "id": 30,
+      "question": "Chiudere",
+      "answer": "Shut down"
+    },
+    {
+      "id": 31,
+      "question": "Introdurre (regola, persona)",
+      "answer": "Bring in"
+    },
+    {
+      "id": 32,
+      "question": "Continuare",
+      "answer": "Carry on"
+    },
+    {
+      "id": 33,
+      "question": "Contattare",
+      "answer": "Reach out"
+    },
+    {
+      "id": 34,
+      "question": "Completare fino alla fine",
+      "answer": "Follow through"
+    },
+    {
+      "id": 35,
+      "question": "Trovare una soluzione",
+      "answer": "Work out"
+    },
+    {
+      "id": 36,
+      "question": "Stabilire obiettivi",
+      "answer": "Set out"
+    },
+    {
+      "id": 37,
+      "question": "Attenersi",
+      "answer": "Stick to"
+    },
+    {
+      "id": 38,
+      "question": "Affrontare",
+      "answer": "Deal with"
+    },
+    {
+      "id": 39,
+      "question": "Far vedere a qualcuno per approvazione",
+      "answer": "Run by"
+    },
+    {
+      "id": 40,
+      "question": "Passare a trovare",
+      "answer": "Drop by"
+    },
+    {
+      "id": 41,
+      "question": "Assemblare / organizzare",
+      "answer": "Put together"
+    },
+    {
+      "id": 42,
+      "question": "Redigere (documento)",
+      "answer": "Draw up"
+    },
+    {
+      "id": 43,
+      "question": "Appianare (problemi)",
+      "answer": "Iron out"
+    },
+    {
+      "id": 44,
+      "question": "Far passare un messaggio",
+      "answer": "Get across"
+    },
+    {
+      "id": 45,
+      "question": "Concludere",
+      "answer": "Wrap up"
+    },
+    {
+      "id": 46,
+      "question": "Trasferire (informazioni)",
+      "answer": "Pass on"
+    },
+    {
+      "id": 47,
+      "question": "Consegnare responsabilità",
+      "answer": "Hand over"
+    },
+    {
+      "id": 48,
+      "question": "Essere all’altezza",
+      "answer": "Live up to"
+    },
+    {
+      "id": 49,
+      "question": "Aggiornarsi",
+      "answer": "Catch up"
+    },
+    {
+      "id": 50,
+      "question": "Risentirsi brevemente",
+      "answer": "Touch base"
+    }
+  ],
+  "PROBLEM-SOLVING & NEGOTIATION": [
+    {
+      "id": 1,
+      "question": "Compromesso",
+      "answer": "Trade-off"
+    },
+    {
+      "id": 2,
+      "question": "Negoziazione",
+      "answer": "Bargaining"
+    },
+    {
+      "id": 3,
+      "question": "Potere negoziale",
+      "answer": "Leverage"
+    },
+    {
+      "id": 4,
+      "question": "Ridurre un rischio",
+      "answer": "Mitigate"
+    },
+    {
+      "id": 5,
+      "question": "Distribuire",
+      "answer": "Allocate"
+    },
+    {
+      "id": 6,
+      "question": "Fattibile",
+      "answer": "Feasible"
+    },
+    {
+      "id": 7,
+      "question": "Allineare",
+      "answer": "Align"
+    },
+    {
+      "id": 8,
+      "question": "Piano B",
+      "answer": "Fallback plan"
+    },
+    {
+      "id": 9,
+      "question": "Risolvere",
+      "answer": "Resolve"
+    },
+    {
+      "id": 10,
+      "question": "Affrontare un problema",
+      "answer": "Address an issue"
+    }
+  ],
+  "TECHNOLOGY & OFFICE": [
+    {
+      "id": 1,
+      "question": "Pannello di controllo",
+      "answer": "Dashboard"
+    },
+    {
+      "id": 2,
+      "question": "Flusso di lavoro",
+      "answer": "Workflow"
+    },
+    {
+      "id": 3,
+      "question": "Interfaccia",
+      "answer": "Interface"
+    },
+    {
+      "id": 4,
+      "question": "Copia di sicurezza",
+      "answer": "Backup"
+    },
+    {
+      "id": 5,
+      "question": "Conformità normativa",
+      "answer": "Compliance"
+    },
+    {
+      "id": 6,
+      "question": "Richiesta di supporto",
+      "answer": "Ticket"
+    },
+    {
+      "id": 7,
+      "question": "Aggiornamento software / miglioramento hardware",
+      "answer": "Update / Upgrade"
+    }
+  ],
+  "PROFESSIONAL ADJECTIVES": [
+    {
+      "id": 1,
+      "question": "Efficiente",
+      "answer": "Efficient"
+    },
+    {
+      "id": 2,
+      "question": "Affidabile",
+      "answer": "Reliable"
+    },
+    {
+      "id": 3,
+      "question": "Coerente",
+      "answer": "Consistent"
+    },
+    {
+      "id": 4,
+      "question": "Disponibile",
+      "answer": "Approachable"
+    },
+    {
+      "id": 5,
+      "question": "Lucido, con capacità analitiche",
+      "answer": "Insightful"
+    },
+    {
+      "id": 6,
+      "question": "Flessibile",
+      "answer": "Flexible"
+    },
+    {
+      "id": 7,
+      "question": "Orientato alla strategia",
+      "answer": "Strategic"
+    },
+    {
+      "id": 8,
+      "question": "Convincente",
+      "answer": "Persuasive"
+    },
+    {
+      "id": 9,
+      "question": "Collaborativo",
+      "answer": "Collaborative"
+    },
+    {
+      "id": 10,
+      "question": "Resistente",
+      "answer": "Resilient"
+    },
+    {
+      "id": 11,
+      "question": "Innovativo",
+      "answer": "Innovative"
+    },
+    {
+      "id": 12,
+      "question": "Preciso",
+      "answer": "Detail-oriented"
+    },
+    {
+      "id": 13,
+      "question": "Proattivo",
+      "answer": "Proactive"
+    }
+  ],
+  "BUSINESS-CRITICAL IDIOMATIC PHRASES": [
+    {
+      "id": 1,
+      "question": "Visione d’insieme",
+      "answer": "Big picture"
+    },
+    {
+      "id": 2,
+      "question": "Fare davvero la differenza",
+      "answer": "Move the needle"
+    },
+    {
+      "id": 3,
+      "question": "Seguire le regole",
+      "answer": "By the book"
+    },
+    {
+      "id": 4,
+      "question": "Tenuto aggiornato",
+      "answer": "In the loop"
+    },
+    {
+      "id": 5,
+      "question": "Sentirsi brevemente",
+      "answer": "Touch base"
+    },
+    {
+      "id": 6,
+      "question": "Essere creativi",
+      "answer": "Think outside the box"
+    },
+    {
+      "id": 7,
+      "question": "Alzare gli standard",
+      "answer": "Raise the bar"
+    },
+    {
+      "id": 8,
+      "question": "Cambiare approccio",
+      "answer": "Shift gears"
+    },
+    {
+      "id": 9,
+      "question": "Ricominciare da capo",
+      "answer": "Back to square one"
+    },
+    {
+      "id": 10,
+      "question": "Pareggiare (zero profit)",
+      "answer": "Break even"
+    }
+  ]
+}
