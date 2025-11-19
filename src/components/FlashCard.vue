@@ -26,7 +26,6 @@ defineEmits(['flip'])
         <div class="content">
           <span class="label">Question</span>
           <span class="question-text">{{ card.question }}</span>
-          <div class="divider"></div>
           <span class="label">Answer</span>
           <span class="answer-text">{{ card.answer }}</span>
           <div v-if="card.tip" class="tip-container">
@@ -41,42 +40,37 @@ defineEmits(['flip'])
 
 <style scoped>
 .flashcard-wrapper {
-  width: 300px;
-  height: 200px;
-  perspective: 1000px;
+  width: 100%;
+  height: 220px;
   cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
 }
 
 .flashcard {
-  position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
   border-radius: 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .flashcard-wrapper:hover .flashcard {
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
-  transform: translateY(-2px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+  transform: translateY(-8px);
 }
 
 .flashcard-wrapper:active .flashcard {
-  transform: scale(0.98);
-}
-
-.flashcard.is-flipped {
-  transform: rotateY(180deg);
+  transform: scale(0.98) translateY(-8px);
 }
 
 .card-face {
-  position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
   border-radius: 20px;
   background: #ffffff;
   display: flex;
@@ -91,6 +85,11 @@ defineEmits(['flip'])
 .front {
   background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   border: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+}
+
+.flashcard.is-flipped .front {
+  display: none;
 }
 
 .front .text {
@@ -120,11 +119,15 @@ defineEmits(['flip'])
 
 /* Back Face */
 .back {
-  transform: rotateY(180deg);
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.05);
   align-items: flex-start;
   text-align: left;
+  display: none;
+}
+
+.flashcard.is-flipped .back {
+  display: flex;
 }
 
 .back .content {
@@ -178,7 +181,6 @@ defineEmits(['flip'])
 }
 
 .tip-container {
-  margin-top: auto;
   padding-top: 12px;
   display: flex;
   gap: 8px;
@@ -198,8 +200,6 @@ defineEmits(['flip'])
 
 @media (max-width: 900px) {
   .flashcard-wrapper {
-    width: 100%;
-    max-width: 320px;
     height: 220px;
   }
 }

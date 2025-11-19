@@ -14,14 +14,11 @@ defineEmits(['toggle', 'select-category'])
 </script>
 
 <template>
-  <!-- Toggle Button -->
-  <button class="sidebar-toggle" @click="$emit('toggle')" :class="{ 'open': isOpen }">
-    <span v-if="!isOpen">☰</span>
-    <span v-else>✕</span>
-  </button>
-
   <!-- Sidebar -->
   <div class="sidebar" :class="{ 'open': isOpen }">
+    <div class="sidebar-header">
+      <button class="close-btn" @click="$emit('toggle')">✕</button>
+    </div>
     <div class="sidebar-content">
       <h3>Categorie</h3>
       <ul>
@@ -34,39 +31,6 @@ defineEmits(['toggle', 'select-category'])
 </template>
 
 <style scoped>
-.sidebar-toggle {
-  position: fixed;
-  top: 12px;
-  left: 20px;
-  z-index: 1001;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: white;
-  border-radius: 12px;
-  width: 46px;
-  height: 46px;
-  font-size: 1.2rem;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
-.sidebar-toggle:hover {
-  background: rgba(255, 255, 255, 0.2);
-  transform: scale(1.05);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-}
-
-.sidebar-toggle.open {
-  background: #fff;
-  color: #000;
-}
-
 .sidebar {
   position: fixed;
   top: 0;
@@ -88,8 +52,35 @@ defineEmits(['toggle', 'select-category'])
   transform: translateX(0);
 }
 
+.sidebar-header {
+  padding: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
 .sidebar-content {
-  padding: 100px 32px 40px;
+  padding: 20px 32px 40px;
 }
 
 .sidebar-content h3 {

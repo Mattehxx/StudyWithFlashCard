@@ -65,7 +65,8 @@ function scrollToCategory(cat) {
 
 <template>
   <div class="app-wrapper">
-    <AppNavbar :subjects="subjectNames" :current-subject="currentSubject" @change-subject="changeSubject" />
+    <AppNavbar :subjects="subjectNames" :current-subject="currentSubject" :is-open="isSidebarOpen"
+      @change-subject="changeSubject" @toggle-sidebar="toggleSidebar" />
 
     <AppSidebar :is-open="isSidebarOpen" :categories="categories" @toggle="toggleSidebar"
       @select-category="scrollToCategory" />
@@ -86,8 +87,47 @@ function scrollToCategory(cat) {
 .app-wrapper {
   min-height: 100vh;
   background: #0f0f11;
-  /* Deep dark background */
-  background: radial-gradient(circle at top left, #1a1a2e 0%, #0f0f11 100%);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.app-wrapper::before {
+  content: '';
+  position: fixed;
+  top: -20%;
+  left: -20%;
+  width: 80vw;
+  height: 80vw;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+  animation: float 20s infinite alternate ease-in-out;
+}
+
+.app-wrapper::after {
+  content: '';
+  position: fixed;
+  bottom: -20%;
+  right: -20%;
+  width: 80vw;
+  height: 80vw;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
+  animation: float 25s infinite alternate-reverse ease-in-out;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+
+  100% {
+    transform: translate(10%, 10%) scale(1.1);
+  }
 }
 
 .container {
@@ -98,7 +138,7 @@ function scrollToCategory(cat) {
   padding-bottom: 60px;
   font-family: 'Inter', sans-serif;
   transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
-  max-width: 1200px;
+  max-width: 1600px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -119,19 +159,15 @@ function scrollToCategory(cat) {
 }
 
 .flashcard-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 32px;
-  justify-content: flex-start;
-  /* Align left for grid-like feel */
-  align-items: stretch;
-  user-select: none;
+  padding-bottom: 40px;
 }
 
 @media (max-width: 900px) {
   .flashcard-list {
     gap: 20px;
-    justify-content: center;
   }
 
   .container {
