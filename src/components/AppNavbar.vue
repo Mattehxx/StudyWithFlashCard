@@ -194,6 +194,7 @@ const isDropdownOpen = ref(false)
   font-size: 0.9rem;
   font-weight: 500;
   text-align: left;
+  text-transform: capitalize;
   transition: all 0.2s ease;
   width: 100%;
 }
